@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <form>
-      <div class="col-sm-10">
+    <form class="form-text">
+      <div class="testando col-sm-10">
         <input type="text" readonly class="ademir form-control-plaintext" v-model="labelCurrency" />
       </div>
     </form>
@@ -83,7 +83,7 @@ export default {
     },
   },
   mounted() {
-    this.labelCurrency = this.textResult;
+    this.labelCurrency = "Escolha uma moeda para visualizar seu grafico";
     let date = new Date();
 
     let day = date.getDate().toString().padStart(2, "0");
@@ -105,15 +105,17 @@ export default {
 
 <style scoped>
 .small {
-  width: 30%;
+  width: 420px;
   margin: auto;
-  color: #c03a2bc7;
 }
 .ademir{
-  border: 1px solid #000;
-  width:100%;
   color: #962d22;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 2px;
+}
+.testando{
+  display: inline;
   text-align: center;
 }
 </style>

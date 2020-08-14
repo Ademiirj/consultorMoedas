@@ -54,10 +54,13 @@ export default {
 #app h1 {
   color: #962d22;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  
+  font-weight: 900;
+  font-stretch: condensed;
 }
 #app select {
   text-align: center;
-  width: 80%;
+  width: 400px;
   height: 50px;
   font-size: 100%;
   font-weight: bold;
@@ -66,6 +69,7 @@ export default {
   background-color: #c0392b;
   border: none;
   border-bottom: 2px solid #962d22;
+  border-right: 2px solid #962d22;
   color: white;
   padding: 10px;
   appearance: none;
@@ -77,6 +81,7 @@ export default {
   color: #c0392b;
   background-color: white;
   border-bottom-color: #DCDCDC;
+  border-right-color: #DCDCDC;
 }
 .div-select{
   text-align: center;
@@ -84,9 +89,7 @@ export default {
   
 }
 .form-select{
-  align-items: center !important;
-  text-align: center !important;
-  display: flex !important;
-  border: 1px solid #000;
+  text-align: center;
+  display: inline-flex;
 }
 </style>
