@@ -1,4 +1,4 @@
-# conversor
+# Consulta Moedas
 
 ## Project setup
 ```
