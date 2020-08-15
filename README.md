@@ -1,8 +1,9 @@
 # Consulta Moedas
 
-Responsive currency values consultant developed in Vue JS using the exchangerate.host api together with Chart.js to display the values information
+Responsive currency values consultant developed in Vue JS using the exchangerate.host api together with Chart.js to display the values information, all values use base **Brazilian Real (BRL)**
 
-![image](https://user-images.githubusercontent.com/47643568/90297869-66be4f00-de66-11ea-9946-982d10ae456b.png)
+![image](https://user-images.githubusercontent.com/47643568/90301393-f61f2e80-de75-11ea-9952-41dea66fb297.png)
+
 
 ## Project setup
 ```
