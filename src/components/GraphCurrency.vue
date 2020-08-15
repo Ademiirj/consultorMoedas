@@ -52,10 +52,10 @@ export default {
             if (response.data.rates[this.dates[i]][this.currency] > 0) {
               valor = (
                 1 / response.data.rates[this.dates[i]][this.currency]
-              ).toFixed(2);
+              );
               this.value.splice(i, 1, valor);
-              this.dates[i] = this.dates[i].substr(-5)
-              this.dates[i] = this.dates[i].split('-').reverse().join('/')
+              this.dates[i] = this.dates[i].substr(-5);
+              this.dates[i] = this.dates[i].split('-').reverse().join('/');
             }
             this.value = this.value.map((item) => Number(item));
           }
