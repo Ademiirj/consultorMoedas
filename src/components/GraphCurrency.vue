@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <form class="form-text">
-      <div class="testando col-sm-10">
-        <input type="text" readonly class="ademir form-control-plaintext" v-model="labelCurrency" />
+      <div class="div-currency col-sm-10">
+        <input type="text" readonly class="text-currency form-control-plaintext" v-model="labelCurrency" />
       </div>
     </form>
 
@@ -54,6 +54,8 @@ export default {
                 1 / response.data.rates[this.dates[i]][this.currency]
               ).toFixed(2);
               this.value.splice(i, 1, valor);
+              this.dates[i] = this.dates[i].substr(-5)
+              this.dates[i] = this.dates[i].split('-').reverse().join('/')
             }
             this.value = this.value.map((item) => Number(item));
           }
@@ -68,8 +70,11 @@ export default {
         labels: this.dates,
         datasets: [
           {
-            label: this.currency + " fluctuation",
-            backgroundColor: "#c03a2bc7",
+            label: this.currency + " variação",
+            borderColor: "#c03a2b",
+            backgroundColor: "#c03a2b7a",
+            
+            borderWidth: 3,
             data: this.value,
           },
         ],
@@ -108,13 +113,13 @@ export default {
   width: 420px;
   margin: auto;
 }
-.ademir{
+.text-currency{
   color: #962d22;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 2px;
 }
-.testando{
+.div-currency{
   display: inline;
   text-align: center;
 }
